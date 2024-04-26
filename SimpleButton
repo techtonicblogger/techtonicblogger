@@ -1,0 +1,21 @@
+<center><button class="hello-button">HELLO</button></center> 
+<a style="font-family: Montserrat"/> 
+<style> /*CSS*/
+.hello-button {
+  background-color: white;  /*background color*/
+  color: black; /*color of the text*/
+  border: 3px solid black; /*size of border*/
+  padding: 1px 1px;  /*size of the button itself*/
+  font-size: 16px; /*font size*/
+  cursor: pointer; /*follows mouse*/
+  transition: background-color 0.7s, color 0.7s, border-color 0.7s; /*time of transition between colors in seconds*/
+  border-radius: 5px; /*rounding of the corners*/
+}
+
+.hello-button:hover { /*same but reverted*/
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+}
+</style>
