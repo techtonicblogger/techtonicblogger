@@ -1,0 +1,48 @@
+<style>
+  
+.reveal-text-container .reveal-text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 800;
+  position: relative;
+  color: transparent;
+
+  animation: showText forwards;
+  animation-delay: 1000ms;
+}
+
+.reveal-text-container .reveal-bg {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: #999999;
+  left: 0;
+
+  animation: revealText 1200ms ease-out;
+}
+
+@keyframes revealText {
+  80% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes showText {
+  to {
+    color: #00D1FF;
+  }
+}  
+  
+</style>
+
+
+<div class="reveal-text-container">
+      <h2 class="reveal-text">TEXT<span class="reveal-bg"></span></h2>
+    </div>
